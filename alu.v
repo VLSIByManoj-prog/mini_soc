@@ -2,7 +2,7 @@ module alu(
 	input wire [1:0] a,
 	input wire [1:0] b,
 	input wire sel,
-	output reg [1:0[] result
+	output reg [1:0] result
 );
 always@(*) begin
 	case(sel)
@@ -12,4 +12,3 @@ always@(*) begin
 	endcase
 end
 endmodule
-

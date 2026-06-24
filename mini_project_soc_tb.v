@@ -4,7 +4,7 @@ reg rst=1;
 reg alu_sel=0;
 reg mux_sel=0;
 wire [1:0] soc_out;
-always#5 clk=~clk;
+always #5 clk <= ~clk;
 mini_project_soc dut(
 .clk(clk),
 .rst(rst),
